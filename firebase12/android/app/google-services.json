@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "90268331681",
+    "project_id": "deneme12-594d6",
+    "storage_bucket": "deneme12-594d6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:90268331681:android:aab333784a391310c90ae0",
+        "android_client_info": {
+          "package_name": "com.ffire.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASICMljI16p4rJE6mn0FUxRVNg8iWP8AM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

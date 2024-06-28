@@ -68,6 +68,7 @@ class _ProfilePageState extends State<ProfilePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Color(0xff286650),
         title: Text('Profil Sayfası'),
       ),
       body: SingleChildScrollView(
@@ -80,6 +81,7 @@ class _ProfilePageState extends State<ProfilePage> {
               margin: EdgeInsets.only(bottom: 16),
               padding: EdgeInsets.all(16),
               decoration: BoxDecoration(
+                color: Color(0xffb9d5bd),
                 border: Border.all(color: Colors.grey),
                 borderRadius: BorderRadius.circular(8),
               ),
@@ -110,6 +112,7 @@ class _ProfilePageState extends State<ProfilePage> {
               margin: EdgeInsets.only(bottom: 16),
               padding: EdgeInsets.all(16),
               decoration: BoxDecoration(
+                color: Color(0xffffffff),
                 border: Border.all(color: Colors.grey),
                 borderRadius: BorderRadius.circular(8),
               ),
@@ -157,6 +160,10 @@ class _ProfilePageState extends State<ProfilePage> {
                       );
                     },
                     child: Text('Güncelle'),
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Color(0xff286650),
+                      foregroundColor: Colors.white,
+                    ),
 
                   ),
                 ],

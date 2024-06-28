@@ -5,7 +5,7 @@ class HelpCenterPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color(0xff7cc2d8),
+        backgroundColor: Color(0xff286650),
         title: Text('Yardım Merkezi'),
       ),
       body: Center(

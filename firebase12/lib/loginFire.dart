@@ -1,8 +1,6 @@
-import 'package:firebase12/anagiris.dart';
 import 'package:flutter/material.dart';
 import 'AnaSayfa.dart';
-import 'loginFire.dart'; // loginFire.dart dosyanızı ekledim.
-
+import 'loginFire.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
@@ -52,8 +50,12 @@ class HomePage extends StatelessWidget {
                   );
                 },
                 child: Text('Giriş Yap'),
+    style: ElevatedButton.styleFrom(
+    backgroundColor: Color(0xff547ead),
+    foregroundColor: Colors.white,
               ),
             ),
+          ),
           ),
         ],
       ),
@@ -98,9 +100,9 @@ class _GirisEkraniState extends State<GirisEkrani> {
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5)),
         shadowColor: Colors.black,
         titleSpacing: 25,
-        backgroundColor: Color(0xff7cc2d8),
+        backgroundColor: Color(0xff286650),
         title: Text(
-          'UYGULAMA ADI',
+          '',
           style: TextStyle(
               color: Colors.white, fontSize: 32, fontWeight: FontWeight.w500),
         ),
@@ -562,7 +564,7 @@ class _GirisEkraniState extends State<GirisEkrani> {
                     }
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Color(0xFFA2CB91),
+                    backgroundColor: Color(0xff50816b),
                   ),
                   child: Text(
                     'Giriş yap',
@@ -579,7 +581,7 @@ class _GirisEkraniState extends State<GirisEkrani> {
 
   Future<void> addUserToFirestore() async {
     try {
-      await _firebaseFirestore.collection('users').add({
+      await _firebaseFirestore.collection('user').add({
         'ad': ad,
         'mail': mail,
         'no': no,

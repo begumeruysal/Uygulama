@@ -4,7 +4,7 @@ import 'atıkListe.dart';
 import 'atıkSec.dart';
 import 'ayarlar.dart';
 import 'profile.dart';
-import 'login.dart';
+import 'loginFire.dart';
 import 'help.dart';
 import 'rozet.dart';
 
@@ -140,8 +140,8 @@ class _AnaSayfaState extends State<AnaSayfa> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color(0xff7cc2d8),
-        title: Text('Ana Sayfa'),
+        backgroundColor: Color(0xff286650),
+        title: Text(''),
         centerTitle: true,
       ),
       drawer: Drawer(
@@ -150,7 +150,7 @@ class _AnaSayfaState extends State<AnaSayfa> {
           children: <Widget>[
             DrawerHeader(
               decoration: BoxDecoration(
-                color: Color(0xff7cc2d8),
+                color: Color(0xff286650),
               ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -158,7 +158,7 @@ class _AnaSayfaState extends State<AnaSayfa> {
                   Center(
                     child: CircleAvatar(
                       radius: 40,
-                      backgroundImage: AssetImage('assets/logo.png'),
+                      backgroundImage: AssetImage('assets/logo2.png'),
                     ),
                   ),
                   SizedBox(height: 10),
@@ -256,7 +256,7 @@ class _AnaSayfaState extends State<AnaSayfa> {
           ),
         ],
         currentIndex: _selectedIndex,
-        selectedItemColor: Color(0xff7cc2d8),
+        selectedItemColor: Color(0xff50816b),
         onTap: _onItemTapped,
       ),
     );

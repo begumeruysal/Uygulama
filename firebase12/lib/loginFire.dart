@@ -21,7 +21,7 @@ class Login extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: HomePage(),
-      title: 'Uygulama Adı',
+      title: 'EcoCycle',
     );
   }
 }
@@ -38,6 +38,21 @@ class HomePage extends StatelessWidget {
               fit: BoxFit.cover,
             ),
           ),
+          Positioned(
+            top: 40.0, // Üstten boşluk miktarı
+            left: 0,
+            right: 0,
+            child: Center(
+              child: Text(
+                'EcoCycle',
+                style: TextStyle(
+                  fontSize: 50.0,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
+              ),
+            ),
+          ),
           Align(
             alignment: Alignment.bottomCenter,
             child: Padding(
@@ -50,18 +65,19 @@ class HomePage extends StatelessWidget {
                   );
                 },
                 child: Text('Giriş Yap'),
-    style: ElevatedButton.styleFrom(
-    backgroundColor: Color(0xff547ead),
-    foregroundColor: Colors.white,
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Color(0xff547ead),
+                  foregroundColor: Colors.white,
+                ),
               ),
             ),
-          ),
           ),
         ],
       ),
     );
   }
 }
+
 
 
 class GirisEkrani extends StatefulWidget {
@@ -102,7 +118,7 @@ class _GirisEkraniState extends State<GirisEkrani> {
         titleSpacing: 25,
         backgroundColor: Color(0xff286650),
         title: Text(
-          '',
+          'EcoCycle',
           style: TextStyle(
               color: Colors.white, fontSize: 32, fontWeight: FontWeight.w500),
         ),

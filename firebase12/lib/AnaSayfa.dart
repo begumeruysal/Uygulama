@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: GirisEkrani(),
-      title: 'Uygulama Adı',
+      title: 'EcoCycle',
     );
   }
 }
@@ -141,7 +141,8 @@ class _AnaSayfaState extends State<AnaSayfa> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Color(0xff286650),
-        title: Text(''),
+        title: Text('EcoCycle'
+            ,style: TextStyle(color: Colors.white),),
         centerTitle: true,
       ),
       drawer: Drawer(
